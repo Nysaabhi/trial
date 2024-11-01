@@ -228,15 +228,6 @@ main.container {
     border-color: #ccc;
 }
 
-.section-container {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
 /* Filter container styles */
 .filter-container {
     width: 100%;
@@ -1313,7 +1304,6 @@ body > h1:first-of-type:not(.heading) {
             <input type="text" class="search-bar" id="searchBar" placeholder="Search for cryptocurrencies, NFTs, people, or smart contracts...">
             <div class="search-suggestions" id="searchSuggestions"></div>
         </div>
-        <div class="section-container">
         <div class="filter-container">
             <button class="filter-btn active" data-filter="all" style="background-color: #2A9D8F;"><i class="fas fa-globe"></i> All</button>
             <button class="filter-btn" data-filter="crypto" style="background-color:  #E84142;"><i class="fas fa-coins"></i> Crypto</button>
