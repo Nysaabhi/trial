@@ -33,7 +33,7 @@ body {
 }
 
 .container {
- max-width: 120%;
+ max-width: 100%;
   margin: 0 auto;
   padding: 10px;
 }
@@ -229,6 +229,7 @@ main.container {
 }
 
 .filter-container {
+    max-width: 1400px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
