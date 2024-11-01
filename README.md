@@ -228,7 +228,19 @@ main.container {
     border-color: #ccc;
 }
 
+/* Container for the entire section */
+.section-container {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Filter container styles */
 .filter-container {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -237,12 +249,12 @@ main.container {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 24px 0;
-    margin-top: 20px;
+    padding: 24px 20px; /* Added horizontal padding */
+    margin: 0; /* Reset margin */
     gap: 0px;
-    width: 100%; /* Makes the container full width */
-    max-width: 100%; /* Ensures it doesn't exceed parent width */
-    box-sizing: border-box; /* Includes padding in width calculation */
+    box-sizing: border-box;
+    position: relative;
+    background-color: #ffffff;
 }
 
 /* Hide scrollbar while maintaining scroll functionality */
@@ -250,6 +262,7 @@ main.container {
     display: none;
 }
 
+/* Filter button styles */
 .filter-btn {
     padding: 14px 32px;
     font-family: 'Poppins', sans-serif;
@@ -258,7 +271,7 @@ main.container {
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 50px;
     background-color: #ffffff;
-    color: #fff;
+    color: #333;
     cursor: pointer;
     transition: all 0.2s ease;
     margin-right: 12px;
@@ -280,14 +293,25 @@ main.container {
 
 .filter-btn:focus {
     outline: none;
-    ring: 2px solid rgba(74, 144, 226, 0.5);
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
 }
-    
+
+/* Separator line styles */
+.separator-container {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    position: relative;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 .separator-line {
     width: 100%;
     height: 1px;
-    background-color: #000;
-    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0;
+    box-sizing: border-box;
 }
 
 #cardsContainer {
@@ -1301,6 +1325,7 @@ body > h1:first-of-type:not(.heading) {
             <input type="text" class="search-bar" id="searchBar" placeholder="Search for cryptocurrencies, NFTs, people, or smart contracts...">
             <div class="search-suggestions" id="searchSuggestions"></div>
         </div>
+        <div class="section-container">
         <div class="filter-container">
             <button class="filter-btn active" data-filter="all" style="background-color: #2A9D8F;"><i class="fas fa-globe"></i> All</button>
             <button class="filter-btn" data-filter="crypto" style="background-color:  #E84142;"><i class="fas fa-coins"></i> Crypto</button>
@@ -1342,7 +1367,9 @@ body > h1:first-of-type:not(.heading) {
             <button class="filter-btn" data-filter="web3-business-directory" style="background-color: #2A9D8F;"><i class="fas fa-address-book"></i> Web3 Business Directory</button>
             <button class="filter-btn" data-filter="defi-protocols" style="background-color: #264653;"><i class="fas fa-network-wired"></i> DeFi Protocols</button>
                     </div>
-            <div class="separator-line"></div>
+<div class="separator-container">
+    <div class="separator-line"></div>
+</div>
 
         <div id="cardsContainer"></div>
     </main>
