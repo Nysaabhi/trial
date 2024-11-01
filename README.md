@@ -33,7 +33,7 @@ body {
 }
 
 .container {
- max-width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 10px;
 }
@@ -229,12 +229,6 @@ main.container {
 }
 
 .filter-container {
-    position: fixed;  /* Make it fixed like the header */
-    top: 70px;  /* Position it below the header */
-    left: 0;
-    width: 100%;
-    background-color: var(--background-color);  /* Match the body background */
-    z-index: 999;  /* Keep it below the header but above other content */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -243,13 +237,21 @@ main.container {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 24px 20px;  /* Add horizontal padding */
+    padding: 24px 0;
+    margin-top: 20px;
     gap: 0px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Add subtle shadow */
 }
 
 .filter-container::-webkit-scrollbar {
     display: none;
+}
+
+.filter-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .filter-btn {
