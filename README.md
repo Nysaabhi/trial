@@ -240,8 +240,12 @@ main.container {
     padding: 24px 0;
     margin-top: 20px;
     gap: 0px;
+    width: 100%; /* Makes the container full width */
+    max-width: 100%; /* Ensures it doesn't exceed parent width */
+    box-sizing: border-box; /* Includes padding in width calculation */
 }
 
+/* Hide scrollbar while maintaining scroll functionality */
 .filter-container::-webkit-scrollbar {
     display: none;
 }
