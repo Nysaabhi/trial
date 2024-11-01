@@ -1,3 +1,4 @@
+# Nysa-Search
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -229,27 +230,21 @@ main.container {
 }
 
 .filter-container {
-    padding: 12px 20px;
-    background: #1a1a1f;  /* Dark, professional background */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    border-bottom: 2px solid #FFD700;  /* Solid gold border */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 24px 0;
+    margin-top: 20px;
+    gap: 0px;
 }
 
 .filter-container::-webkit-scrollbar {
     display: none;
-}
-
-.filter-content {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .filter-btn {
