@@ -1295,7 +1295,7 @@ body > h1:first-of-type:not(.heading) {
 
 @media (max-width: 768px) {
     .filter-container {
-        padding: 5px 0 5px 20px; /* Smaller padding on mobile */
+        padding: 5px 0 5px 14px; /* Smaller padding on mobile */
     }
 }
 
