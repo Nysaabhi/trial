@@ -33,9 +33,11 @@ body {
 }
 
 .container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 main.container {
@@ -228,9 +230,7 @@ main.container {
     border-color: #ccc;
 }
 
-/* Filter container styles */
 .filter-container {
-    width: 100vw;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -239,20 +239,22 @@ main.container {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 24px 20px; /* Added horizontal padding */
-    margin: 0; /* Reset margin */
+    padding: 24px 20px;
+    margin-top: 20px;
     gap: 0px;
-    box-sizing: border-box;
+    width: 100vw;
     position: relative;
-    background-color: transparent;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: var(--background-color);
 }
 
-/* Hide scrollbar while maintaining scroll functionality */
 .filter-container::-webkit-scrollbar {
     display: none;
 }
 
-/* Filter button styles */
 .filter-btn {
     padding: 14px 32px;
     font-family: 'Poppins', sans-serif;
@@ -261,7 +263,7 @@ main.container {
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 50px;
     background-color: #ffffff;
-    color: #333;
+    color: #fff;
     cursor: pointer;
     transition: all 0.2s ease;
     margin-right: 12px;
@@ -283,14 +285,19 @@ main.container {
 
 .filter-btn:focus {
     outline: none;
-    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+    ring: 2px solid rgba(74, 144, 226, 0.5);
 }
-    
+
 .separator-line {
-    width: 100%;
+    width: 100vw;
     height: 1px;
     background-color: #000;
     margin: 20px 0;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 #cardsContainer {
