@@ -1293,6 +1293,24 @@ body > h1:first-of-type:not(.heading) {
     display: none !important;
 }
 
+@media (max-width: 768px) {
+    .filter-container {
+        padding: 5px 0 5px 20px; /* Smaller padding on mobile */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .filter-container {
+        padding: 24px 20px 24px 30px; /* Medium padding on tablets */
+    }
+}
+
+@media (min-width: 1025px) {
+    .filter-container {
+        padding: 24px 20px 24px 40px; /* Full padding on desktop */
+    }
+}
+
 </style>
 </head>
 <body>
