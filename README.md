@@ -228,7 +228,6 @@ main.container {
     border-color: #ccc;
 }
 
-/* Container for the entire section */
 .section-container {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
@@ -295,23 +294,12 @@ main.container {
     outline: none;
     box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
 }
-
-/* Separator line styles */
-.separator-container {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    position: relative;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
+    
 .separator-line {
     width: 100%;
     height: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin: 0;
-    box-sizing: border-box;
+    background-color: #000;
+    margin: 20px 0;
 }
 
 #cardsContainer {
@@ -1367,9 +1355,7 @@ body > h1:first-of-type:not(.heading) {
             <button class="filter-btn" data-filter="web3-business-directory" style="background-color: #2A9D8F;"><i class="fas fa-address-book"></i> Web3 Business Directory</button>
             <button class="filter-btn" data-filter="defi-protocols" style="background-color: #264653;"><i class="fas fa-network-wired"></i> DeFi Protocols</button>
                     </div>
-<div class="separator-container">
-    <div class="separator-line"></div>
-</div>
+            <div class="separator-line"></div>
 
         <div id="cardsContainer"></div>
     </main>
