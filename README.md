@@ -229,17 +229,15 @@ main.container {
 }
 
 .filter-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    padding: 24px 0;
-    margin-top: 20px;
-    gap: 0px;
+    padding: 12px 20px;
+    background: #1a1a1f;  /* Dark, professional background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #FFD700;  /* Solid gold border */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .filter-container::-webkit-scrollbar {
