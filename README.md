@@ -244,7 +244,7 @@ main.container {
     gap: 0px;
     box-sizing: border-box;
     position: relative;
-    background-color: #ffffff;
+    background-color: transparent;
 }
 
 /* Hide scrollbar while maintaining scroll functionality */
