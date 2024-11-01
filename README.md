@@ -239,7 +239,7 @@ main.container {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 24px 20px;
+    padding: 24px 20px 24px 40px; /* Added left padding of 40px */
     margin-top: 20px;
     gap: 0px;
     width: 100vw;
