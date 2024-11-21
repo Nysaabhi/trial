@@ -203,6 +203,10 @@ body {
      cursor: pointer;
 }
 
+.send-message i {
+    font-size: 1.5em; /* Increase the icon size */
+}
+
 .alert {
     position: fixed;
     top: 20px;
