@@ -971,7 +971,25 @@ function initializeCategoryCarousel() {
     });
 }
 
-// Category Page Implementation
+const serviceIcons = {
+    'Plumbing': 'fa-faucet',
+    'Electrical': 'fa-bolt',
+    'Carpentry': 'fa-hammer',
+    'Painting': 'fa-paint-roller',
+    'Appliance Repair': 'fa-tv',
+    'AC/Heating Repair': 'fa-wind',
+    'Cleaning Services': 'fa-broom',
+    'Haircut': 'fa-cut',
+    'Manicure': 'fa-hands',
+    'Pedicure': 'fa-hand-sparkles',
+    'Massage': 'fa-spa',
+    'Facial': 'fa-face-smile',
+    'Tutoring': 'fa-book-open',
+    'Language Classes': 'fa-globe',
+    'Test Prep': 'fa-graduation-cap',
+    'Skills Training': 'fa-chalkboard-teacher'
+};
+
 function showCategoryPage(category) {
     const pageGrid = document.getElementById('pageGrid');
     pageGrid.style.display = 'grid';
@@ -980,9 +998,13 @@ function showCategoryPage(category) {
     category.services.forEach(service => {
         const serviceCard = document.createElement('div');
         serviceCard.className = 'category-card';
+        
+        // Use service-specific icon, fallback to tools icon if not found
+        const iconClass = serviceIcons[service] || 'fa-tools';
+        
         serviceCard.innerHTML = `
             <div class="category-icon">
-                <i class="fas fa-tools"></i>
+                <i class="fas ${iconClass}"></i>
             </div>
             <div class="category-name">${service}</div>
         `;
