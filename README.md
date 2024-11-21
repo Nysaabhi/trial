@@ -783,7 +783,7 @@ body > h1:first-of-type:not(.heading) {
             <input type="text" id="chatInput" placeholder="Search for services or ask a question..." />
             <div class="input-actions">
                 <button class="send-message" id="sendButton">
-                    <i class="fas fa-paper-plane"></i>
+                    <i class="fas fa-arrow-up"></i>
                 </button>
             </div>
         </div>
