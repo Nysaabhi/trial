@@ -193,15 +193,14 @@ body {
     display: flex;
     gap: 8px;
 }
-
+ 
 .input-actions button {
-    background: none;
-    border: none;
-    color: rgba(255, 215, 0, 0.7);
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
+     padding: 20px 24px;
+     background: var(--accent-gradient);
+     border: none;
+     border-radius: 8px;
+     color: #ffffff;
+     cursor: pointer;
 }
 
 .alert {
@@ -851,7 +850,7 @@ body > h1:first-of-type:not(.heading) {
                 <a href="listings.html">
                     <i class="fas fa-tasks"></i>
                 </a>
-                <span>Listing</span>
+                <span>Partner</span>
             </div>
         </div>
     </nav>
