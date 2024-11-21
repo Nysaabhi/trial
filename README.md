@@ -195,7 +195,7 @@ body {
 }
  
 .input-actions button {
-     padding: 20px 24px;
+     padding: 20px 20px;
      background: var(--accent-gradient);
      border: none;
      border-radius: 8px;
